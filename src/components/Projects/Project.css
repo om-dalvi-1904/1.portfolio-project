@@ -1,0 +1,34 @@
+.projects-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    padding: 0 10px;
+}
+
+.project-item img{
+    width: 100%;
+    height: 100%;
+}
+
+.project-item:hover{
+    border: 1px solid #333;
+    transform: scale(1.1);
+    transition: all 0.5s ease;
+    cursor: pointer;
+}
+
+@media screen and (min-width: 768px){
+    .projects-list-container{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+    }
+    .project-item{
+        width: 30%;
+        margin: 8px;
+    }
+}
